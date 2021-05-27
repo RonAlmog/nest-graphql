@@ -8,8 +8,8 @@ import { LaunchModule } from './launch/launch.module';
 @Module({
   imports: [
     GraphQLModule.forRoot({
-      typeDefs: ['./**/*.graphql'],
-      definitions: { path: join(process.cwd(), 'src/graphql.st') },
+      typePaths: ['./**/*.graphql'],
+      definitions: { path: join(process.cwd(), 'src/graphql.ts') },
     }),
     LaunchModule,
   ],
